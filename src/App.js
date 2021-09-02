@@ -26,13 +26,6 @@ function App() {
           <Route exact path="/contact">
             <Contact />
           </Route>
-
-          <Route exact path="/selected/:apiId">
-            <Selected />
-          </Route>
-          <Route exact path="/list/:userSearch">
-            <List />
-          </Route>
         </div>
         <Footer />
       </div>
