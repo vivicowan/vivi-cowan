@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/vivi-cowan/static/css/main.a617e044.chunk.css",
+    "main.js": "/vivi-cowan/static/js/main.ba4fe008.chunk.js",
+    "main.js.map": "/vivi-cowan/static/js/main.ba4fe008.chunk.js.map",
+    "runtime-main.js": "/vivi-cowan/static/js/runtime-main.a2acb0d3.js",
+    "runtime-main.js.map": "/vivi-cowan/static/js/runtime-main.a2acb0d3.js.map",
+    "static/js/2.915a2ab1.chunk.js": "/vivi-cowan/static/js/2.915a2ab1.chunk.js",
+    "static/js/2.915a2ab1.chunk.js.map": "/vivi-cowan/static/js/2.915a2ab1.chunk.js.map",
+    "static/js/3.088abb4d.chunk.js": "/vivi-cowan/static/js/3.088abb4d.chunk.js",
+    "static/js/3.088abb4d.chunk.js.map": "/vivi-cowan/static/js/3.088abb4d.chunk.js.map",
+    "index.html": "/vivi-cowan/index.html",
+    "static/css/main.a617e044.chunk.css.map": "/vivi-cowan/static/css/main.a617e044.chunk.css.map",
+    "static/js/2.915a2ab1.chunk.js.LICENSE.txt": "/vivi-cowan/static/js/2.915a2ab1.chunk.js.LICENSE.txt",
+    "static/media/logo.6ce24c58.svg": "/vivi-cowan/static/media/logo.6ce24c58.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a2acb0d3.js",
+    "static/js/2.915a2ab1.chunk.js",
+    "static/css/main.a617e044.chunk.css",
+    "static/js/main.ba4fe008.chunk.js"
+  ]
+}
