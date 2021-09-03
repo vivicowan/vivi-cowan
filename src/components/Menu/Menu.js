@@ -7,16 +7,16 @@ const Menu = () => {
     <div className="container">
       <div className="back"></div>
       <nav>
-        <a>
-          <Link to="/">Home</Link>
+        <a href="/vivi-cowan">
+          <Link to="/vivi-cowan">Home</Link>
         </a>
-        <a>
+        <a href="/about">
           <Link to="/about">About Me</Link>
         </a>
-        <a>
+        <a href="/work">
           <Link to="/work">Work</Link>
         </a>
-        <a>
+        <a href="/contact">
           <Link to="/contact">Contact</Link>
         </a>
       </nav>
