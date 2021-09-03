@@ -1,148 +1,87 @@
-@import url("https://fonts.googleapis.com/css?family=Poiret+One");
-$primary-color: #f6303e;
-$menu-text-color: white;
-$background-color-hover: black;
-
-* {
-  padding: 0;
-  margin: 0;
-}
-.container {
-  height: 100vh;
-  font-family: "Poiret One", sans-serif;
-  overflow: hidden;
-  .title {
-    text-align: center;
-    margin-top: 20rem;
-    font-size: 5rem;
-    color: $primary-color;
-    @media only screen and (max-width: 700px) {
-      font-size: 3.5rem;
-    }
-  }
-}
-
-.menu-icon {
+@import url('https://fonts.googleapis.com/css?family=Oswald:500');
+.back{
   position: fixed;
+  left: 0;
   top: 0;
-  right: 0;
-  width: 12rem;
-  height: 12rem;
-  color: $primary-color;
-  transform: skewX(45deg);
-  -webkit-transform: skewX(45deg);
-  -ms-transform: skewX(45deg);
-  -webkit-transform-origin: 0 0;
-  -ms-transform-origin: 0 0;
-  transform-origin: 0 0;
-  z-index: 20;
-
-  .fa-bars {
-    position: absolute;
-    top: 2rem;
-    left: 3rem;
-    font-size: 4rem;
-    transform: skewX(-45deg);
-    cursor: pointer;
-    @media only screen and (max-width: 700px) {
-      font-size: 3rem;
-    }
-  }
-  &:before {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 100%;
-    width: 100%;
-    height: 100%;
-    background-color: $background-color-hover;
-    -webkit-transition: -webkit-transform 0.2s;
-    -o-transition: transform 0.5s;
-    transition: transform 0.5s;
-  }
-  &:hover:before {
-    -webkit-transform: translateX(-100%);
-    -ms-transform: translateX(-100%);
-    transform: translateX(-100%);
-  }
-}
-
-.menu {
-  position: fixed;
-  top: 0;
-  left: 100%;
   width: 100%;
   height: 100%;
-  z-index: 10;
-  opacity: 0;
-  -webkit-transition: -webkit-transform 0.5s, opacity 0.4s;
-  -ms-transition: transform 0.5s, opacity 0.4s;
-  transition: transform 0.5s, opacity 0.4s;
-  min-width: 65rem;
-  &.open {
-    opacity: 1;
-    -webkit-transform: translateX(-100%);
-    -ms-transform: translateX(-100%);
-    transform: translateX(-100%);
+  background: #fce729;
+  background-size:cover;
+}
+.thx{
+  position: fixed;
+  left:50%;
+  transform:translateX(-50%);
+  bottom: 15px;
+}
+nav{
+  width: 100%;
+  position: fixed;
+  top:50px;
+  text-align:center;
+}
+nav a{
+  font-family: 'Oswald', sans-serif;
+  font-weight:500;
+  text-transform:uppercase;
+  text-decoration:none;
+  color:#16151b;
+  margin:0 15px;
+  font-size:16px;
+  letter-spacing:1px;
+  position:relative;
+  display:inline-block;
+}
+nav a:before{
+  content:'';
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background:#16151b;
+  top:47%;
+  animation:out 0.2s cubic-bezier(1, 0, 0.58, 0.97) 1 both;
+}
+nav a:hover:before{
+  animation:in 0.2s cubic-bezier(1, 0, 0.58, 0.97) 1 both;
+
+}
+@keyframes in{
+  0%{
+    width: 0;
+    left:0;
+    right:auto;
   }
-  .menu-wrap {
-    position: absolute;
-    top: 0;
+  100%{
+    left:0;
+    right:auto;
+    width: 100%;
+  }
+}
+@keyframes out{
+  0%{
+    width:100%;
+    left: auto;
     right: 0;
-    width: 85%;
-    height: 100%;
-    color: $primary-color;
-    transform: skewX(45deg);
-    -webkit-transform: skewX(45deg);
-    -ms-transform: skewX(45deg);
-    -webkit-transform-origin: 0 0;
-    -ms-transform-origin: 0 0;
-    transform-origin: 0 0;
-    background-color: black;
   }
+  100%{
+    width: 0;
+    left: auto;
+    right: 0;
+  }
+}
+@keyframes show{
+  0%{
+    opacity:0;
+    transform:translateY(-10px);
+  }
+  100%{
+    opacity:1;
+    transform:translateY(0);
+  }
+}
 
-  .menu-overlay {
-    position: absolute;
-    top: 7rem;
-    right: 5rem;
-    z-index: 10;
-    .menu-item {
-      position: relative;
-      display: block;
-      font-size: 3rem;
-      font-weight: bold;
-      line-height: 3.5rem;
-      padding-top: 1rem;
-      padding-right: 5rem;
-      color: $primary-color;
-      cursor: pointer;
-
-      @media only screen and (max-width: 700px) {
-        font-size: 2rem;
-      }
-
-      a {
-        &:before {
-          content: attr(data-item);
-          position: absolute;
-          top: 0;
-          left: 0;
-          max-width: 0;
-          overflow: hidden;
-          text-align: right;
-          -webkit-transition: max-width 0.5s;
-          -ms-transition: max-width 0.5s;
-          transition: max-width 0.5s;
-          padding-top: 1rem;
-          color: $menu-text-color;
-          background-color: $background-color-hover;
-          z-index: 30;
-        }
-        &:hover:before {
-          max-width: 100%;
-        }
-      }
-    }
+@for $i from 1 through 5 {
+  nav a:nth-child(#{$i}){
+    animation:show .2s #{$i*0.1+1}s ease 1 both;
   }
 }
