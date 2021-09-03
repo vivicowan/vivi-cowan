@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./Menu.scss";
 
-function Menu() {
+const Menu = () => {
   return (
     <div className="container">
       <div className="back"></div>
@@ -22,6 +22,6 @@ function Menu() {
       </nav>
     </div>
   );
-}
+};
 
 export default Menu;
