@@ -1,7 +1,10 @@
-body {
-	background: url("../content/images/light-mode.png");
+.dark {
+	background: url("../../content/images/dark-mode.jpg");
 	background-size: 100%;
 	background-repeat: no-repeat;
  	background-attachment: fixed;
 	background-position: center;
-}
+  }
+  .dark body {
+	color: white;
+  }
