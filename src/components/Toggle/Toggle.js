@@ -13,7 +13,10 @@ const Toggle = ({ onClose }) => {
   }, [darkMode]);
 
   return (
-    <button onClick={() => setDarkMode(!darkMode)}>Toggle Dark Mode</button>
+    <div class="toggle-btn" id="_1st-toggle-btn">
+      <input type="checkbox" onClick={() => setDarkMode(!darkMode)} />
+      <span></span>
+    </div>
   );
 };
 
