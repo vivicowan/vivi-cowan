@@ -1,25 +1,37 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Toggle from "../Toggle/Toggle.js";
 import "./Menu.scss";
 
 const Menu = () => {
   return (
     <div className="container">
-      <div className="back"></div>
       <nav>
-        <a href="/vivi-cowan">
-          <Link to="/vivi-cowan">Home</Link>
-        </a>
-        <a href="/about">
-          <Link to="/about">About Me</Link>
-        </a>
-        <a href="/work">
-          <Link to="/work">Work</Link>
-        </a>
-        <a href="/contact">
-          <Link to="/contact">Contact</Link>
-        </a>
+        <ul>
+          <li>
+            <a className="btn" href="/vivi-cowan">
+              <Link to="/vivi-cowan">Home</Link>
+            </a>
+          </li>
+          <li>
+            <a className="btn" href="/about">
+              <Link to="/about">About Me</Link>
+            </a>
+          </li>
+          <li>
+            <a className="btn" href="/work">
+              <Link to="/work">Work</Link>
+            </a>
+          </li>
+          <li>
+            <a className="btn" href="/contact">
+              <Link to="/contact">Contact</Link>
+            </a>
+          </li>
+        </ul>
       </nav>
+
+      <Toggle />
     </div>
   );
 };
