@@ -5,7 +5,7 @@ import About from "./pages/About/About";
 import Work from "./pages/Work/Work";
 import Contact from "./pages/Contact/Contact";
 import Menu from "./Menu/Menu";
-// import Footer from "./components/Footer";
+import Footer from "./Footer/Footer";
 
 import "./Portfolio.css";
 
@@ -28,7 +28,7 @@ function App() {
             <Contact />
           </Route>
         </div>
-        {/* <Footer /> */}
+        <Footer />
       </div>
     </Router>
   );

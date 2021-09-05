@@ -1,6 +1,6 @@
 body {
 	background: url("../content/images/light-mode.png");
-	background-size: 100%;
+	background-size: cover;
 	background-repeat: no-repeat;
  	background-attachment: fixed;
 	background-position: center;
