@@ -9,7 +9,7 @@
 	width: 90%;
 	padding: 20px 10px;
 	margin: 0px auto;
-	margin-top: 1rem;
+	margin-top: 6rem;
   }
   
   .gretting-main {
@@ -118,6 +118,10 @@
 	  display: flex;
 	  margin-top: 10px;
 	}
+
+	.entities {
+		font-size: 15px;
+	}
   }
   @media (max-width: 480px) {
 	.button-greeting-div {
@@ -125,7 +129,7 @@
 	}
 	.greeting-text {
 	  font-size: 50px;
-	  margin-top: -50px;
+	  margin-top: -30px;
 	}
 	.greeting-sub {
 	  margin-top: 10px;
@@ -155,14 +159,31 @@
 	  margin-top: -10px;
 	  text-align: center;
 	}
+
+	.entities {
+		font-size: 5px;
+		line-height: 1;
+	}
   }
   
   .entities {
-	margin-top: 150px;
+	margin-top: 40px;
 	line-height: 2;
-	font-size: 25px;
+	font-size: 20px;
 	color: rgb(255, 255, 255);
 	font-weight: bolder;
+	
+  }
+
+  .entities .text {
+	padding: 0.50em 0.50em;
+	margin: 0px 0.25em;
+	line-height: 3;
+	border-radius: .2em;
+	border: 1px solid;
+	background: rgba(54, 54, 54, 0.2);
+	border-color: rgba(54, 54, 54, 0.2);
+	color: rgb(255, 255, 255);
   }
   
   [data-entity] {
@@ -172,6 +193,7 @@
 	display: inline-block;
 	border-radius: 0.25em;
 	border: 1px solid;
+	
   }
   
   [data-entity]::after {
@@ -190,7 +212,7 @@
   [data-entity][data-entity="noun"] {
 	background: rgba(166, 226, 45, 0.2);
 	border-color: rgb(166, 226, 45);
-	color: rgb(255, 255, 255);
+	color: rgb(10, 70, 40);
   }
   [data-entity][data-entity="noun"]::after {
 	background: rgb(166, 226, 45);
@@ -211,7 +233,7 @@
   [data-entity][data-entity="skill"] {
 	background: rgb(187, 47, 117, 0.2);
 	border-color: rgb(187, 47, 117);
-	color: rgb(255, 255, 255);
+	color: rgb(73, 25, 25);
   }
   
   [data-entity][data-entity="skill"]::after {
@@ -221,7 +243,7 @@
   [data-entity][data-entity="freelance"] {
 	background: rgb(187, 161, 47, 0.2);
 	border-color: rgb(187, 161, 47);
-	color: rgb(255, 255, 255);
+	color: rgb(255, 196, 0);
   }
   
   [data-entity][data-entity="freelance"]::after {
@@ -232,7 +254,7 @@
   [data-entity][data-entity="verb"] {
 	background: rgba(47, 187, 171, 0.2);
 	border-color: rgb(47, 187, 171);
-	color: rgb(255, 255, 255);
+	color: rgb(27, 47, 116);
   }
   
   [data-entity][data-entity="verb"]::after {

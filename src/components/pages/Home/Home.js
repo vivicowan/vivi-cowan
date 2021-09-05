@@ -37,12 +37,14 @@ const Home = () => {
               </h1>
               <span className="greeting-text-span subTitle">
                 <div className="entities">
-                  A <mark data-entity="noun">Data Science practitioner</mark>{" "}
-                  who thrives to{" "}
-                  <mark data-entity="verb">leverage Startups</mark> <br /> using
-                  AI-based solutions along with{" "}
-                  <mark data-entity="skill">Web Development</mark> <br /> and a
-                  blend of <mark data-entity="freelance">UI/UX Designing</mark>
+                  <mark className="text">
+                    A <mark data-entity="noun">Junior Engineer</mark> who has a
+                    fascination for{" "}
+                    <mark data-entity="verb">learning Technology</mark> <br />{" "}
+                    along with working collaboratively on{" "}
+                    <mark data-entity="skill">Web Development</mark> <br /> and{" "}
+                    <mark data-entity="freelance">Designing Interfaces</mark>
+                  </mark>
                 </div>
               </span>
             </div>
