@@ -20,19 +20,58 @@
 }
  #two2 {
 	grid-row-start: 1;
-	grid-row-end: 2;
+	grid-row-end: 1;
 	grid-column-start: 3;
 	grid-column-end: 6;
 	
 }
+
 #three2 {
-	grid-row-start: 2;
+  grid-row-start: 2;
 	grid-row-end: 3;
 	grid-column-start: 3;
 	grid-column-end: 6;
 }
 
+.skill_box {
+  width: 60%;
+}
 
+
+.icons {
+  display: flex;
+  text-align: center;
+
+  }
+
+.skills {
+  text-align: center;
+  font-size: 20px;
+	font-family: 'Space Mono', monospace;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.one {
+  font-size: 18px;
+  width: 200px;
+  font-family: 'Space Mono', monospace;
+  color: white;
+}
+
+.two {
+  font-size: 18px;
+  width: 200px; 
+  font-family: 'Space Mono', monospace;
+  color: white;
+}
+
+.three {
+  font-size: 18px;
+  width: 200px; 
+  font-family: 'Space Mono', monospace;
+  color: white;
+}
 
 #eleven2{
   background: pink;
@@ -75,7 +114,10 @@ background: teal;
 }
 
 #three2 {
-	background: coral;
+	border-radius: .2em;
+	border: 1px solid;
+	background: rgba(87, 136, 95, 0.377);
+	border-color: rgba(31, 85, 40, 0.349);
 }
 
 .greeting-typewriter2 {
