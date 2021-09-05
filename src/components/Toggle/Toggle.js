@@ -23,7 +23,7 @@ const Toggle = () => {
 
   return (
     <ToggleDiv>
-      <div className="sun">☼</div>
+      <div className="sun">☀️</div>
       <input
         className="react-switch-checkbox"
         onClick={() => setDarkMode(!darkMode)}
@@ -33,7 +33,7 @@ const Toggle = () => {
       <label className="react-switch-label" htmlFor={`react-switch-new`}>
         <span className={`react-switch-button`} />
       </label>
-      <div className="moon">☽</div>
+      <div className="moon">🌙 </div>
     </ToggleDiv>
   );
 };
