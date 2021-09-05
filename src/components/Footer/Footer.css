@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+
+
+.footer-text {
+	text-align: center;
+	/* color: #868e96; */
+	font-weight: bold;
+	color: rgb(16, 88, 16);
+	font-family: 'Space Mono', monospace;
+  }
+  
+  .footer-div {
+	display: grid;
+	grid-template-columns: 1450px 1px; 
+	grid-column-gap: 2px;
+	width: 100px;
+  }
+  
