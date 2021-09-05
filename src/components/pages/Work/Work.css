@@ -1,0 +1,151 @@
+#wrapper1 {
+  margin-top: 100px;
+  justify-content: center;
+	display: grid;
+	font-size: 32px;
+	grid-gap: 25px;
+	grid-template-columns: 200px 200px 200px 200px 200px;
+  grid-template-rows: 200px 200px 200px 200px;
+}
+
+#one1{
+
+	grid-row-start:1;
+	grid-column-end: 3;
+	grid-column-start: 1;
+	grid-row-end: 4;
+}
+ #two1 {
+	grid-row-start: 1;
+	grid-row-end: 1.5;
+	grid-column-start: 1;
+	grid-column-end: 6;
+	
+}
+#three1 {
+	grid-row-start: 3;
+	grid-row-end: 4;
+	grid-column-start: 3;
+	grid-column-end: 4;
+}
+
+#four1{ background: yellowgreen;
+	grid-row-start:3;
+	grid-row-end:4;
+	grid-column-start:5 ;
+	grid-column-end:6 ;
+  
+}
+#five1{
+  background: gold;
+  grid-row-start:2 ;
+	grid-row-end:3 ;
+	grid-column-start: 6;
+	grid-column-end: 5;
+}
+
+#six1{
+  background: purple;
+	grid-row-start: 2;
+	grid-row-end: 3;
+	grid-column-start: 5;
+	grid-column-end: 4;
+}
+
+#seven1{
+	background: red;
+	grid-row-start: 4;
+	grid-row-end: 3;
+	grid-column-start: 5;
+	grid-column-end: 4;
+}
+#eight1{
+	background: pink;
+	grid-row-start:2;
+	grid-row-end: 3;
+	grid-column-start:3;
+	grid-column-end: 4;
+
+} 
+#nine1{
+  background: blue;
+  grid-row-start:15 ;
+	grid-row-end: 22;
+	grid-column-start:1;
+	grid-column-end:4 ; 
+}
+#ten1{
+  background: #B22222;
+  grid-row-start: 4;
+	grid-row-end: 5;
+	grid-column-start: 5;
+	grid-column-end: 4; 
+}
+
+#eleven1{
+  background: pink;
+  grid-row-start: 4;
+  grid-row-end:14;
+   grid-column-start:1;
+  grid-column-end: 2;
+}
+#twelve1{
+  background: lightblue;
+  grid-row-start:4;
+  grid-row-end:7;
+  grid-column-start:2;
+  grid-column-end:3;
+  
+}
+#thirteen1{
+  background: teal;
+  grid-row-start:7;
+  grid-row-end:14;
+  grid-column-start:2;
+  grid-column-end:3;
+}
+#fourteen1{
+  background: tomato;
+}
+#fifteen1{
+  background: mediumseagreen;
+   grid-row-start: 4;
+  grid-row-end:5;
+  grid-column-start:5 ;
+  grid-column-end:6;
+}
+#sixteen1{
+  background:	#FF1493;
+  grid-row-start:5 ;
+  grid-row-end:22;
+  grid-column-start: 4;
+  grid-column-end:6;
+}
+
+#wrapper1 > div {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#one1 {
+background: teal;	
+}
+#two1 {
+	background: lavender;
+}
+#three1 {
+	background: coral;
+}
+#four1 {
+	background: turquoise;
+}
+#five1 {
+	background: gold;
+}
+
+#six1 {
+	background: yellowgreen;
+}
+#nine1{
+  background: blue;
+}
