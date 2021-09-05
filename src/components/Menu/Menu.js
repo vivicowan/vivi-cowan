@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Toggle from "../Toggle/Toggle.js";
 import "./Menu.scss";
 
 const Menu = () => {
@@ -30,8 +29,6 @@ const Menu = () => {
           </li>
         </ul>
       </nav>
-
-      <Toggle />
     </div>
   );
 };
