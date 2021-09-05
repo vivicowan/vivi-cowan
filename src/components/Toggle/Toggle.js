@@ -1,7 +1,16 @@
 import React from "react";
-import "./Toggle.css";
+import "./Toggle.scss";
+import styled from "styled-components";
 
-const Toggle = ({ onClose }) => {
+export const ToggleDiv = styled.div`
+  margin-top: 40px;
+  margin-right: 5px;
+  float: right;
+  display: flex;
+  flex-direction: row;
+`;
+
+const Toggle = () => {
   const [darkMode, setDarkMode] = React.useState(false);
 
   React.useEffect(() => {
@@ -13,10 +22,19 @@ const Toggle = ({ onClose }) => {
   }, [darkMode]);
 
   return (
-    <div class="toggle-btn" id="_1st-toggle-btn">
-      <input type="checkbox" onClick={() => setDarkMode(!darkMode)} />
-      <span></span>
-    </div>
+    <ToggleDiv>
+      <div className="sun">☼</div>
+      <input
+        className="react-switch-checkbox"
+        onClick={() => setDarkMode(!darkMode)}
+        id={`react-switch-new`}
+        type="checkbox"
+      />
+      <label className="react-switch-label" htmlFor={`react-switch-new`}>
+        <span className={`react-switch-button`} />
+      </label>
+      <div className="moon">☽</div>
+    </ToggleDiv>
   );
 };
 
