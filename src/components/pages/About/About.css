@@ -18,6 +18,27 @@
 	grid-column-start: 1;
 	grid-row-end: 4;
 }
+
+.about-box{
+  text-align: left;
+  
+  padding: 10px;
+	font-family: 'Space Mono', monospace;
+  margin-bottom: 20px;
+  
+}
+
+.about-me {
+  color: rgb(202, 0, 101);
+  font-size: 40px;
+}
+
+.about-section {
+  color: rgb(202, 0, 101);
+  font-size: 23px; 
+  font-weight: bolder;
+}
+
  #two2 {
 	grid-row-start: 1;
 	grid-row-end: 1;
@@ -74,12 +95,50 @@
 }
 
 #eleven2{
-  background: pink;
   grid-row-start: 4;
   grid-row-end:14;
   grid-column-start:1;
   grid-column-end: 2;
 }
+
+.buttons {
+  margin: 0;
+  /* height: 100vh; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.click {
+  --c: rgb(0, 162, 255);
+  color: var(--c);
+  font-size: 20px;
+  border: 0.3em solid var(--c);
+  border-radius: 0.5em;
+  width: 8em;
+  height: 3em;
+  text-transform: uppercase;
+  font-weight: bolder;
+  font-family: 'Space Mono', monospace;
+  letter-spacing: 0.1em;
+  text-align: left;
+  position: relative;
+  overflow: hidden;
+  margin: 1em;
+}
+
+.click-btn {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: var(--c);
+}
+
+.click:hover .click-btn {
+  transform: translateY(0) scale(1);
+}
+
+
 #twelve2{
   background: lightblue;
   grid-row-start:4;
@@ -89,7 +148,7 @@
   
 }
 #thirteen2{
-  background: teal;
+
   grid-row-start:7;
   grid-row-end:14;
   grid-column-start:2;
@@ -97,11 +156,35 @@
 }
 
 #sixteen2{
-  background:	#FF1493;
+
   grid-row-start:3 ;
   grid-row-end:14;
   grid-column-start: 3;
   grid-column-end:6;
+}
+
+.school-box{
+  text-align: left;
+  
+  padding: 10px;
+	font-family: 'Space Mono', monospace;
+  margin-bottom: 20px;
+  
+}
+
+.school {
+  color: rgb(202, 0, 101);
+  font-size: 40px; 
+}
+
+.school-section {
+  color: rgb(202, 0, 101);
+  font-size: 23px; 
+  font-weight: bolder
+}
+
+.hr {
+  color: rgb(202, 0, 101);
 }
 
 #wrapper2 > div {
@@ -109,9 +192,9 @@
 	justify-content: center;
 	align-items: center;
 }
-#one2 {
+/* #one2 {
 background: teal;	
-}
+} */
 
 #three2 {
 	border-radius: .2em;
@@ -125,8 +208,8 @@ background: teal;
 	font-size: 60px;
 	margin-bottom: 60px;
 	line-height: 0px;
-	color: rgb(255, 50, 101);
-	text-shadow: rgb(105, 0, 53), 10px;
+	color: rgb(5, 153, 0);
+	text-shadow: rgb(35, 87, 50), 10px;
 	font-family: 'Space Mono', monospace;
   }
 
