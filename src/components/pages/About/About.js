@@ -20,7 +20,8 @@ const About = (props) => {
                 degree in Software Engineering. I enjoy learning new things and
                 take every challenge head-on. I have an eye for detail and a
                 vivid imagination. I am very interested in the world of
-                Full-Stack Web Development and UI/UX Designing.
+                Full-Stack Web Development and UI/UX Designing and looking for
+                an opportunity to start my career.
               </p>
             </div>
           </div>
@@ -89,14 +90,16 @@ const About = (props) => {
                 University of Texas at Arlington: <br />
                 <hr className="hr" />
                 Granted Honors Scholarship <br />
-                Pursuing Bachelor of Science in Software Engineering (BSSE) - In
-                progress <br />
+                <mark data-entity="in progress">
+                  Pursuing Bachelor of Science in Software Engineering (BSSE)
+                </mark>{" "}
+                <br />
               </p>
               <p>
                 University of California, San Diego: <br />
                 <hr className="hr" />
                 Extension Online <br />
-                San Diego Coding Bootcamp - Complete
+                <mark data-entity="complete">San Diego Coding Bootcamp</mark>
               </p>
             </div>
           </div>

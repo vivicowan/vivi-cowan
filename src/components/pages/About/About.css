@@ -16,7 +16,7 @@
 	grid-row-start:1;
 	grid-column-end: 3;
 	grid-column-start: 1;
-	grid-row-end: 4;
+	grid-row-end: 5;
 }
 
 .about-box{
@@ -28,13 +28,24 @@
   
 }
 
+  .about-box p {
+	padding: 0.50em 0.50em;
+	margin: 0px 0.25em;
+
+	border-radius: .2em;
+	border: 1px solid;
+	background: rgba(119, 47, 187, 0.2);
+	border-color: rgb(136, 47, 187);
+  color: rgb(181, 21, 255);
+  }
+
 .about-me {
-  color: rgb(202, 0, 101);
+  color: rgb(181, 21, 255);
   font-size: 40px;
 }
 
 .about-section {
-  color: rgb(202, 0, 101);
+  color: rgb(181, 21, 255);
   font-size: 23px; 
   font-weight: bolder;
 }
@@ -110,11 +121,14 @@
 }
 
 .click {
-  --c: rgb(0, 162, 255);
+  --c: rgba(60, 183, 255, 0.753);
   color: var(--c);
   font-size: 20px;
   border: 0.3em solid var(--c);
   border-radius: 0.5em;
+  border: 2px solid #1649d6b2;
+	border-right: 2px solid #1649d6b2;
+	border-bottom: 2px solid #1649d6b2;
   width: 8em;
   height: 3em;
   text-transform: uppercase;
@@ -177,11 +191,70 @@
   font-size: 40px; 
 }
 
-.school-section {
-  color: rgb(202, 0, 101);
-  font-size: 23px; 
-  font-weight: bolder
-}
+.school-box {
+	margin-top: 40px;
+	line-height: 2;
+	font-size: 20px;
+	color: rgb(255, 255, 255);
+	font-weight: bolder;
+	
+  }
+
+  .school-box p {
+	padding: 0.50em 0.50em;
+	margin: 0px 0.25em;
+	line-height: 2.5;
+	border-radius: .2em;
+	border: 1px solid;
+	background: rgb(187, 47, 117, 0.2);
+	border-color: rgb(187, 47, 117);
+	color: rgb(202, 0, 101);
+  }
+  
+  [data-entity] {
+	padding: 0.25em 0.35em;
+	margin: 0px 0.25em;
+	line-height: 1;
+	display: inline-block;
+	border-radius: 0.25em;
+	border: 1px solid;
+	
+  }
+  
+  [data-entity]::after {
+	box-sizing: border-box;
+	content: attr(data-entity);
+	font-size: 0.6em;
+	line-height: 1;
+	padding: 0.35em;
+	border-radius: 0.35em;
+	text-transform: uppercase;
+	display: inline-block;
+	vertical-align: middle;
+	margin: 0px 0px 0.1rem 0.5rem;
+  }
+  
+  [data-entity][data-entity="in progress"] {
+	background: rgba(166, 226, 45, 0.507);
+	border-color: rgb(166, 226, 45);
+	color: rgb(40, 85, 42);
+  }
+  [data-entity][data-entity="in progress"]::after {
+	background: rgb(166, 226, 45);
+	color: rgb(0, 0, 0);
+  }
+  
+  [data-entity][data-entity="complete"] {
+	background: rgba(147, 47, 187, 0.2);
+	border-color: rgb(108, 47, 187);
+	color: rgb(235, 193, 255);
+  }
+  
+  [data-entity][data-entity="complete"]::after {
+	background: rgb(154, 47, 187);
+	color: rgb(0, 0, 0);
+  }
+
 
 .hr {
   color: rgb(202, 0, 101);
