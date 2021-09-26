@@ -3,22 +3,106 @@ import "./Work.css";
 
 const Work = () => {
   return (
-    <div id="wrapper1">
-      <div id="two1">2</div>
-      <div id="three1">3</div>
-      <div id="four1">4</div>
-      <div id="five1">5</div>
-      <div id="six1">6</div>
-      <div id="seven1">7</div>
-      <div id="eight1">8</div>
-      <div id="nine1">9</div>
-      <div id="ten1">10</div>
-      <div id="eleven1">11</div>
-      <div id="twelve1">12</div>
-      <div id="thirteen1">13</div>
-      <div id="fourteen1">14</div>
-      <div id="fifteen1">15</div>
-      <div id="sixteen1">16</div>
+    <div className="container">
+      <div className="row">
+        <div className="thumb-box">
+          <a href="">
+            <img src="https://picsum.photos/640/480/?random" alt="" />
+            <span className="overlay-box">
+              <span className="meta">Feb 20, 2019</span>
+              <span className="main-title">
+                Lorem lipsum dollar set for dummy text.
+              </span>
+              <span className="description">
+                Lorem lipsum dollar set is the best dummy text for the web world
+                which has the best interaction Lorem lipsum dollar set is the
+                best dummy text for the web world which has the best
+                interaction...
+              </span>
+            </span>
+          </a>
+        </div>
+
+        <div className="thumb-box">
+          <a href="">
+            <img src="https://picsum.photos/640/480" alt="" />
+            <span className="overlay-box">
+              <span className="meta">Feb 20, 2019</span>
+              <span className="main-title">
+                Simply the best text for dummy world is lorem lipsum.
+              </span>
+              <span className="description">
+                Lorem lipsum dollar set is the best dummy...
+              </span>
+            </span>
+          </a>
+        </div>
+
+        <div className="thumb-box">
+          <a href="">
+            <img src="https://picsum.photos/640/480/?random" alt="" />
+            <span className="overlay-box">
+              <span className="meta">Feb 20, 2019</span>
+              <span className="main-title">
+                How can we edit lorem lipsum text for dummy data.
+              </span>
+              <span className="description">
+                Lorem lipsum dollar set is the best dummy text for the web world
+                which has the best interaction...
+              </span>
+            </span>
+          </a>
+        </div>
+
+        <div className="thumb-box">
+          <a href="">
+            <img src="https://picsum.photos/640/480/?random" alt="" />
+            <span className="overlay-box">
+              <span className="meta">Feb 20, 2019</span>
+              <span className="main-title">
+                Lorem lipsum dollar set for dummy text.
+              </span>
+              <span className="description">
+                Lorem lipsum dollar set is the best dummy text for the web world
+                which has the best interaction Lorem lipsum dollar set is the
+                best dummy text for the web world which has the best
+                interaction...
+              </span>
+            </span>
+          </a>
+        </div>
+
+        <div className="thumb-box">
+          <a href="">
+            <img src="https://picsum.photos/640/480" alt="" />
+            <span className="overlay-box">
+              <span className="meta">Feb 20, 2019</span>
+              <span className="main-title">
+                Simply the best text for dummy world is lorem lipsum.
+              </span>
+              <span className="description">
+                Lorem lipsum dollar set is the best dummy...
+              </span>
+            </span>
+          </a>
+        </div>
+
+        <div className="thumb-box">
+          <a href="">
+            <img src="https://picsum.photos/640/480/?random" alt="" />
+            <span className="overlay-box">
+              <span className="meta">Feb 20, 2019</span>
+              <span className="main-title">
+                How can we edit lorem lipsum text for dummy data.
+              </span>
+              <span className="description">
+                Lorem lipsum dollar set is the best dummy text for the web world
+                which has the best interaction...
+              </span>
+            </span>
+          </a>
+        </div>
+      </div>
     </div>
   );
 };
